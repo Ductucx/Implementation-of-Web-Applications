@@ -1,1 +1,0 @@
-Este fichero solo es como un intermediario para demostrar como se enlaza otro documento Markdown, para más información sobre HTTP haz click [aquí](https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto).
