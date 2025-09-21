@@ -1,0 +1,17 @@
+# === CÓDIGO INICIAL 5 === #
+servicio:
+  nombre: api_gateway
+  imagen: terraformadores/api:1.2
+  entorno:
+    DATABASE_URL: localhost:5432/db
+    DEBUG true
+    TIMEOUT=30
+
+# === CÓDIGO ARREGLADO 5 === #
+servicio:
+  nombre: api_gateway
+  imagen: terraformadores/api:1.2
+  entorno:
+    DATABASE_URL: localhost:5432/db
+    DEBUG: true   # En YAML las variables deben ser -> clave: valor
+    TIMEOUT: 30

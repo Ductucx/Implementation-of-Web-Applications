@@ -1,0 +1,23 @@
+# === CÓDIGO INICIAL 3 === #
+aplicacion:
+  nombre: "Mi App Web"
+  version: 1.0.0
+  puertos:
+    - "8080:80"
+  entorno:
+    - URL_DB=localhost
+    - PUERTO_DB=5432
+  entorno:
+    - ENV=production
+
+
+# === CÓDIGO ARREGLADO 3 === #
+aplicacion:
+  - nombre: "Mi App Web"
+    version: 1.0.0
+    puertos:
+      - "8080:80"
+    entorno:
+      - URL_DB=localhost
+      - PUERTO_DB=5432
+      - ENV=production    # En YAML, no se permiten claves duplicadas, por lo que "entorno" solo debe salir una vez

@@ -1,0 +1,29 @@
+# === CÓDIGO INICIAL 4 === #
+tareas:
+  - nombre: despliegue
+    pasos:
+      - etapa: "construir"
+        script: "npm run build"
+      - etapa: "desplegar"
+        script: "docker-compose up -d"
+  - nombre: test
+    etapa: "unitarios"
+    script: "npm test"
+    etapa: "integracion"
+    script: "mocha"
+
+
+# === CÓDIGO ARREGLADO 4 === #
+tareas:
+  - nombre: despliegue
+    pasos:
+      - etapa: "construir"
+        script: "npm run build"
+      - etapa: "desplegar"
+        script: "docker-compose up -d"
+  - nombre: test
+    pasos:
+      - etapa: "unitarios"    # "etapa" y "script" se repetian dos veces, por lo que si queremos que realmente se repitan debemos de hacer un despliegue de los mismos
+        script: "npm test"
+      - etapa: "integracion"
+        script: "mocha"

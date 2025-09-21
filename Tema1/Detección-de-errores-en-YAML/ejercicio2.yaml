@@ -1,0 +1,18 @@
+# === CÓDIGO INICIAL 2 === #
+usuario:
+  nombre: "Juan Perez"
+  edad: '25'
+  esta_activo: false
+  roles: [administrador, editor]
+  configuracion:
+    notificaciones_email: ON
+
+
+# === CÓDIGO ARREGLADO 2 === #
+usuario:
+  - nombre: "Juan Perez"
+    edad: 25    # Si el dato lo ponemos en comillas simples ('') lo reconoce como cadena, nosotros como queremos que sea un número entonces habrá que quitar las comillas
+    esta_activo: false
+    roles: ["administrador", "editor"]    # Los valores necesitan comillas si no son variables conocidas
+    configuracion:
+      notificaciones_email: true    # YAML no reconoce "ON", tiene que ser un carácter boleano (true/false)

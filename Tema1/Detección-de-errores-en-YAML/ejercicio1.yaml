@@ -1,0 +1,26 @@
+# === CÓDIGO INICIAL 1 === #
+servicios:
+  - nombre: web
+    imagen: nginx:latest
+    puertos:
+      - "80:80"
+      - "443:443"
+  - nombre: base_de_datos
+  imagen: postgres:13
+  entorno:
+    - POSTGRES_USER=admin
+    - POSTGRES_PASSWORD=secret
+
+
+# === CÓDIGO ARREGLADO 1 === #
+servicios:
+  - nombre: web
+    imagen: nginx:latest
+    puertos:
+      - "80:80"
+      - "443:443"
+  - nombre: base_de_datos
+    imagen: postgres:13   #imagen no estaba alineada/tabulada correctamente
+    entorno:              #entorno no estaba alineada/tabulada correctamente
+    - POSTGRES_USER=admin
+    - POSTGRES_PASSWORD=secret
