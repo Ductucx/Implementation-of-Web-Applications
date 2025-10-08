@@ -81,4 +81,94 @@ Finalmente, una vez fusionada, la eliminamos para mantener el repositorio limpio
 
 
 
-#
+# EJERCICIOS EN PAREJA
+## Apartado 1: Creando repositorio
+<p style="text-align: justify;">
+  El primer paso es crear un repositorio para poder trabajar en parejas. En este caso se creará en GitLab:
+</p>
+
+![alt image parejas-apartado1](./IMG/parejas-apartado1.png)
+
+<p style="text-align: justify;">
+  Una vez creado el repositorio haremos un clon para tenerlo en la máquina local:
+</p>
+
+![alt image parejas-apartado1-1](./IMG/parejas-apartado1-1.png)
+
+
+## Apartado 2: Creando ramas
+
+<p style="text-align: justify;">
+  Ahora generaremos una rama para cada miembro, en mi caso sera "parejas/evelin".
+</p>
+
+![alt image parejas-apartado2](./IMG/parejas-apartado2.png)
+
+
+## Apartado 3: Generando el conflicto
+
+<p style="text-align: justify;">
+  Para generar el conflicto, crearemos un fichero en nuestra rama con un texto de ejmplo. Cada miembro deberá escribir un mensaje distinto en un fichero con el mismo nombre.
+</p>
+
+![alt image parejas-apartado3](./IMG/parejas-apartado3.png)
+
+<p style="text-align: justify;">
+  Ahora que tenemos el archivo y hecho el commit, procederemos a subirlo para generar el conflicto. Seguiremos los siguientes pasos:
+</p>
+
+<p style="text-align: justify;">
+  <b>Subimos la rama:</b>
+</p>
+
+![alt image parejas-apartado3-1](./IMG/parejas-apartado3-1.png)
+
+<p style="text-align: justify;">
+  <b>Cambiamos a main y hacemos el merge:</b>
+</p>
+
+![alt image parejas-apartado3-2](./IMG/parejas-apartado3-2.png)
+
+<p style="text-align: justify;">
+  <b>Si hacemos un git status veremos el conflicto:</b>
+</p>
+
+![alt image parejas-apartado3-3](./IMG/parejas-apartado3-3.png)
+
+
+## Apartado 4: Solucionando el conflicto
+
+<p style="text-align: justify;">
+  Para generar el conflicto, tuvimos que hacer un merge desde una rama, y luego otro desde la otra rama. En mi caso se ve como genera el conflicto, por lo que es el segundo commit del mismo archivo. Como teníamos el <b>mismo archivo con un texto diferente en la mísma línea</b>, se ha generado el conflicto.
+</p>
+
+<p style="text-align: justify;">
+  Cuando vayamos a abrir el archivo, nos saldrá lo siguiente:
+</p>
+
+![alt image parejas-apartado4](./IMG/parejas-apartado4.png)
+
+<p style="text-align: justify;">
+  Borramos las líneas que nos han añadido en el archivo (<<<<<<<< HEAD; =======; >>>>>>> parejas/evelin) y ponemos un texto que queramos.
+</p>
+
+![alt image parejas-apartado4-1](./IMG/parejas-apartado4-1.png)
+![alt image parejas-apartado4-2](./IMG/parejas-apartado4-2.png)
+
+<p style="text-align: justify;">
+  Una vez hecho el "git add -u" y el "git commit", prodcederemos con el git push:
+</p>
+
+![alt image parejas-apartado4-3](./IMG/parejas-apartado4-3.png)
+
+![alt image parejas-apartado4-4](./IMG/parejas-apartado4-4.png)
+
+
+## Apartado 5: Mirando los commits realizados
+
+<p style="text-align: justify;">
+  Finalmente aqui podremos ver todos los commits de todas las ramas:
+</p>
+
+
+![alt image parejas-apartado1-1](./IMG/parejas-apartado5.png)

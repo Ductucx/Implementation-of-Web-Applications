@@ -8,6 +8,9 @@
 
 
 ## Ejercicio 1: Servidor Nginx en modo demonio
+![alt image](./IMG/captura1.png)
+
+
 
 ## Ejercicio 2: Uso de volúmenes en Nginx
 
