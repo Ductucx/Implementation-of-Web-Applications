@@ -24,13 +24,16 @@ Este lenguaje utiliza etiquetas que se muestran de la siguiente manera:
 Pero una estructura con este lenguaje se vería algo parecido a la siguiente:
 
 ```html
-<html>
-    <!DOCTYPE html>
+<!DOCTYPE html>
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
     </head>
     <body>
-        <h1> Esto es un título </h1>
+        <h1>Esto es un título principal!!!</h1>
+        <p>Y esto un texto en un párrafo</p>
     </body>
 </html>
 ```
