@@ -5,7 +5,7 @@
 3. [Dockerfile](#dockerfile)
   - 3.1. [PHP](#php)
   - 3.2. [Control de errores](#control-de-los-errores-con-puertos)
-4. [Archivo PHP](#archivo-php)
+4. [Poniendo en marcha nuestro LAMP](#poniendo-en-marcha-nuestro-lamp)
 
 <br/>
 
@@ -67,7 +67,7 @@ docker compose up -d
 ---
 ### PHP
 
-Importante nuestro archivo **index.php** se encuentra en la siguiente dirección:
+Cabe mencionar que nuestro archivo **index.php** se encuentra en la siguiente dirección:
 
 ![alt image](./IMG/captura2-1.png)
 
@@ -287,4 +287,59 @@ Si todo esta bien, nos devolverá el mensaje de confirmación de que todo funcio
 
 ![alt image](./IMG/captura1-2.png)
 
-## CONTINUARÁ
+## Poniendo en marcha nuestro LAMP
+
+Antes de empezar, vamos a mencionar el cambio de puertos para **no generar conflictos** con el LAMP de la máquina host:
+
+- PHPMyAdmin: 8090
+- PHP: 1080
+- MySQL: 3307
+
+Ahora, seguimos con el proceso.
+
+Primero vamos a copiar los archivos del LAMP host a nuestra carpeta del docker compose:
+
+![alt image](./IMG/captura3-1.png)
+
+**AHORA MUY IMPORTANTE**. Antes de lanzar el docker compose cambiar algunos parámetros. Vamos a cambiar las últimas líneas del archivo `sample.env` tal como se muestra en la siguiente captura:
+
+![alt image](./IMG/captura3-3.png)
+
+Seguimos con nuestro **archivo de conexiones**, donde pondremos a prueba nuestra base de datos de MySQL. El archivo `conexion.php` que copiamos de la anterior práctica vamos a tener que cambiar un parámetro.
+
+Si nos vamos a nuestro archivo de `docker-compose.yml` , veremos que tenemos lo siguiente:
+
+![alt image](./IMG/captura3-5.png)
+
+En una parte de toda la estructura, tenemos definido como ***database*** el nombre de nuestro MySQL. Sin embargo en el archivo `conexion.php` que utilizamos en la anterior práctica bastaba con poner **localhost**, eso aqui dará error.
+
+Por lo que nos dirigimos a nuestro `conexion.php` **ubicado en la carpeta del docker compose** y cambiamos ese **localhost** por nuestro nombre, en este caso **database**:
+
+![alt image](./IMG/captura3-4.png)
+
+Ahora si lo hemos hecho todo bien, podremos iniciar nuestro docker compose con el comando `docker compose up -d` :
+
+![alt image](./IMG/captura3-6.png)
+
+Si intentamos acceder a las páginas, cabe destacar que si ya tenemos un LAMP en la parte host, tendremos que especificar los puertos para que diferencie de LAMP.
+
+*Especificado [más arriba](#poniendo-en-marcha-nuestro-lamp)*.
+
+<br/>
+
+---
+### Comprobaciones
+
+Página principal, escribimos: `http://ip_servidor:1080`
+
+![alt image](./IMG/captura3-9.png)
+
+Tabla terraformadores, escribimos: `http://ip_servidor:1080/conexion.php`
+
+![alt image](./IMG/captura3-7.png)
+
+PHPMyAdmin, escribimos: `http://ip_servidor:8090`
+
+![alt image](./IMG/captura3-8.png)
+
+**Con esto hemos conseguido poner en funcionamiento un LAMP con docker compose.**
