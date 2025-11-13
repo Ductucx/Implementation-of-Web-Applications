@@ -243,6 +243,22 @@ sudo systemctl stop apache2
 sudo systemctl stop mysql
 ```
 
+<br/>
+
+---
+
+**MUCHA ATENCIÓN SI SE QUIEREN EVITAR ERRORES**
+
+**EN EL SIGUIENTE EJEMPLO SE HARÁ UN `docker compose up -d` . ¡¡¡TODAVÍA NO EJECUTE EL COMANDO SI NO QUIERES GENERAR ERRORES!!!**
+
+**ESTO SIMPLEMENTE ES UN EJEMPLO EXPLICATIVO EN CASO DE QUE MAS ADELANTE TE SURJA ALGUN ERROR. PARA EMPEZAR A EJECUTAR EL DOCKER COMPOSE DEBERÁ DIRIGIRSE AL APARTADO ==> [Poneindo en marcha nuestro lamp](#poniendo-en-marcha-nuestro-lamp).**
+
+---
+
+<br/>
+<br/>
+
+
 Ahora bien si no queremos parar los servicios y simplemente queremos que funcionen ambos, tanto en máquina local como docker, procederemos con los siguientes pasos.
 
 *En este ejemplo breve, en la instalación vemos que el puerto del MySQL esta dando fallos...*
@@ -318,6 +334,8 @@ Por lo que nos dirigimos a nuestro `conexion.php` **ubicado en la carpeta del do
 ![alt image](./IMG/captura3-4.png)
 
 Ahora si lo hemos hecho todo bien, podremos iniciar nuestro docker compose con el comando `docker compose up -d` :
+
+**Si surge algún error relacionado a los puertos, consultad el apartado ==> [Control de los errores con puertos](#control-de-los-errores-con-puertos)**
 
 ![alt image](./IMG/captura3-6.png)
 
