@@ -28,6 +28,11 @@
   - 2.2. [LAMP con Docker en una máquina](./Tema2/Tarea2_LAMP-con-Docker/)
   - 2.3. [LAMP en AWS en una máquina](./Tema2/Tarea3_LAMP-en-AWS/)
 
+### 3. [Tema 3](./Tema3/)
+  - 3.1. [Tareas de clase](./Tema3/1_Tareas_de_clase/)
+  - 3.2. [Boletín extra PHP](./Tema3/2_Boletín_extra_PHP/)
+  - 3.3. [Cálculo de nota media](./Tema3/3_Cálculo_nota_media/)
+
 <br/>
 
 ## Referencias
