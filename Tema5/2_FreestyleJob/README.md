@@ -27,13 +27,6 @@ Clonamos el repositorio con nuestro html:
 
 ![alt image](./IMG/captura2.png)
 
-Cabe destacar que para este procedimiento también tendremos que instalar `apache2` y `git` en nuestrá máquina con jenkins instalado...
-
-```sh
-sudo apt update
-sudo apt install apache2
-sudo apt install git
-```
 
 Una vez realizado lo anterior, nos dirigimos a la configuración de jenkins. Creamos el "Job" y vamos a su configuración. Rellenamos los siguientes campos de la siguiente manera:
 
