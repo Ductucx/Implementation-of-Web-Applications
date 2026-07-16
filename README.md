@@ -14,7 +14,7 @@
   <img src="./.IMG/PHP-logo.svg.png" alt="imgphp" width="200" style="vertical-align: middle; margin: 0 2rem;"/>
 </p>
 
-<p style="text-align: justify; font-style: italic; font-size: 0.8em; color: #b3b3b3">Freely distributable images. For more information, please consult <a href="#referencias">Links</a>.</p>
+<p style="text-align: justify; font-style: italic; font-size: 0.8em; color: #b3b3b3">Freely distributable images. For more information, please consult <a href="#links">Links</a>.</p>
 
 ## Practice
 ### 1. [Basics](./Basics/)
