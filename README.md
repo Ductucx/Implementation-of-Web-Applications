@@ -2,7 +2,7 @@
 
 <p style="text-align: justify;">
   Welcome to my home page about Web Applications Impplementation.
-  This repository shows jobs that i made by own porpuse to learn more about Computer Technologies.
+  This repository shows jobs that I made by own porpuse to learn more about Computer Technologies.
 </p>
 
 <p style="text-align: justify;">
@@ -14,24 +14,31 @@
   <img src="./.IMG/PHP-logo.svg.png" alt="imgphp" width="200" style="vertical-align: middle; margin: 0 2rem;"/>
 </p>
 
-<p style="text-align: justify; font-style: italic; font-size: 0.8em; color: #b3b3b3">Freely distributable images. For more information, please consult... <a href="#referencias">Links</a>.</p>
+<p style="text-align: justify; font-style: italic; font-size: 0.8em; color: #b3b3b3">Freely distributable images. For more information, please consult <a href="#referencias">Links</a>.</p>
 
-## Tareas
-### 1. [Basics](./Tema1/)
-  - 1.1. [Markdown Introduction](./Tema1/Introducción-a-Markdown/)
-  - 1.2. [YAML](./Tema1/Detección-de-errores-en-YAML/)
-  - 1.3. [Docker](./Tema1/Docker-Avanzado/)
-  - 1.4. [Git](./Tema1/Git_Trabajando-con-ramas/)
+## Practice
+### 1. [Basics](./Basics/)
+  - [Docker](./Basics/Docker/)
+  - [Git](./Basics/Git/)
+  - [Markdown Introduction](./Basics/Markdown/)
+  - [YAML](./Basics/YAML/)
 
-### 2. [LAMP](./Tema2/)
-  - 2.1. [Deploying LAMP on Linux](./Tema2/Tarea1_LAMP/)
-  - 2.2. [LAMP with Docker](./Tema2/Tarea2_LAMP-con-Docker/)
-  - 2.3. [LAMP with AWS](./Tema2/Tarea3_LAMP-en-AWS/)
+### 2. [LAMP](./LAMP/)
+  - 2.1. [Deploying LAMP on Linux](./LAMP/1-LAMP-Linux/)
+  - 2.2. [LAMP with Docker](./LAMP/2-LAMP-Docker/)
+  - 2.3. [LAMP with AWS](./LAMP/3-LAMP-AWS/)
 
-### 3. [PHP](./Tema3/)
-  - 3.1. [Basic Exercices](./Tema3/1_Tareas_de_clase/)
-  - 3.2. [Extra exercices PHP](./Tema3/2_Boletín_extra_PHP/)
-  - 3.3. [Average grade calculation](./Tema3/3_Cálculo_nota_media/)
+### 3. [PHP](./Programming-with-PHP/)
+  - 3.1. [Basic Exercices](./Programming-with-PHP/1-Basic-exercices/)
+  - 3.2. [Extra exercices PHP](./Programming-with-PHP/2-Extra-exercices/)
+  - [Average grade calculation](./Programming-with-PHP/Avarage-grade-calculation/)
+  - [Average grade calculation](./Programming-with-PHP/POO-exercices/)
+  - [Average grade calculation](./Programming-with-PHP/Verification-method/)
+
+### 4. [Jenkins](./Jenkins/)
+  - 3.1. [Basic Job](./Jenkins/1-Basic-job/)
+  - 3.2. [Freestyle Job](./Jenkins/2_FreestyleJob/)
+  - 3.2.1. [Freestyle Job - Second part](./Jenkins/2b_FreestyleJob/)
 
 <br/>
 

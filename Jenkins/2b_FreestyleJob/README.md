@@ -10,7 +10,6 @@
 
 Antes de empezar, mencionar que vamos a crear un volumen a partir de el directorio /var/www/html de la práctica anterior
 
-
 Creamos un archivo docker compose, pero primero debemos de tener instalado docker compose. Si su sistema no dispone del paquete, se instala con:
 
 ```sh

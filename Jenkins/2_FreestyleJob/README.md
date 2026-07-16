@@ -34,6 +34,6 @@ Una vez realizado lo anterior, nos dirigimos a la configuración de jenkins. Cre
 
 ![alt image](./IMG/captura4.png)
 
-Ahora si probamos aconectarnos a la página web, nos saldrá el resultado de la página web.
+Ahora si probamos conectarnos a la página web, nos saldrá el resultado de la página web.
 
 ![alt image](./IMG/captura5.png)
